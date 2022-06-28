@@ -1,0 +1,9 @@
+.MainSearch {
+  position: relative;
+  display: inline-block;
+  width: calc(100% - 4rem);
+}
+
+.MainSearch img {
+  height: 15px;
+}
