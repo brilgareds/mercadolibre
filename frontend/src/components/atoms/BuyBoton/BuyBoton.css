@@ -1,0 +1,19 @@
+.buy-boton {
+  background-color: #3483FA;
+  color: white;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #0d6efd;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.buy-boton:hover {
+  cursor: pointer;
+  background-color: #1c55ac;
+}
+
+.buy-boton:active {
+  transform: scale(0.98);
+}

@@ -1,0 +1,37 @@
+.main-container {
+  min-height: 100vh;
+  padding-bottom: 1.5rem;
+  background: #EEEEEE;
+}
+
+header, main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+header > div, main > div {
+  grid-column: 2/12;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header {
+  background-color: #ffe600;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.content-container {
+  background-color: white;
+  width: 100%;
+  min-height: 20rem;
+  border-radius: 4px;
+}

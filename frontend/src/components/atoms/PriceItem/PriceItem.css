@@ -1,0 +1,12 @@
+.price-item {
+  display: flex;
+  align-items: flex-start;
+  min-width: max-content;
+  margin-bottom: 32px;
+  font-size: 46px;
+}
+
+.float-value {
+  font-size: 22px;
+  margin-top: 0.42rem;
+}

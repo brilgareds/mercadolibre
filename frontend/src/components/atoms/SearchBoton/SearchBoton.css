@@ -1,0 +1,23 @@
+.search-button {
+  position: absolute;
+  right: 0;
+}
+
+.search-button {
+  height: 100%;
+  width: 46px;
+  padding: 0;
+  border: none;
+  outline: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #EEEEEE;
+}
+
+.search-button:hover {
+  cursor: pointer;
+  background-color: #e2e2e2;
+}
+
+.search-button:active {
+  transform: scale(0.95);
+}
