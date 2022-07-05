@@ -1,3 +1,7 @@
 .item-state {
   margin-bottom: 16px;
 }
+
+.item-state:first-letter {
+  text-transform: uppercase;
+}

@@ -1,9 +1,7 @@
 .big-picture-item {
   flex-basis: auto !important;
-  margin-top: 32px;
-  padding-left: 32px;
-  min-width: min(calc(680px + 32px), 100%);
-  max-width: min(calc(680px + 32px), 100%);
+  min-width: min(680px, 100%);
+  max-width: min(680px, 100%);
 }
 
 .big-picture-item > img {

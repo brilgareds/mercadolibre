@@ -3,16 +3,16 @@ import './Item.css';
 import { ItemPicture } from '../ItemPicture/ItemPicture';
 import { ItemDescription } from '../ItemDescription/ItemDescription';
 
-export function Item({ path, showSeparator = false }: any) {
+export function Item({ item, showSeparator = false }: any) {
   return (
     <>
       <div className="item">
         <div className="item-picture-container">
-          <ItemPicture path={path} />
+          <ItemPicture item={item} />
         </div>
 
         <div className="item-description-container">
-          <ItemDescription />
+          <ItemDescription item={item} />
         </div>
       </div>
       {

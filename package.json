@@ -6,11 +6,23 @@
     "backend"
   ],
   "scripts": {
-    "start": "npm run start --workspace=backend",
-    "start:back": "npm run start --workspace=backend",
-    "start:front": "npm run start --workspace=frontend",
-    "build:front": "npm run build --workspace=frontend",
-    "test:front": "npm run test --workspace=frontend",
-    "eject:front": "npm run eject --workspace=frontend"
+    "start": "npm run start:back && start:front",
+    "dev": "npm run start:front && npm run dev:back",
+    "dev:back": "npm run dev --workspace=mercadolibre-backend",
+    "start:back": "npm run start --workspace=mercadolibre-backend",
+    "start:front": "npm run start --workspace=mercadolibre-frontend",
+    "build:front": "npm run build --workspace=mercadolibre-frontend",
+    "test:front": "npm run test --workspace=mercadolibre-frontend",
+    "eject:front": "npm run eject --workspace=mercadolibre-frontend"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "redux-promise": "^0.6.0",
+    "redux-thunk": "^2.4.1",
+    "typescript": "4.7.4"
+  },
+  "devDependencies": {
+    "@types/redux-promise": "^0.5.29",
+    "redux-devtools-extension": "^2.13.9"
   }
 }

@@ -1,37 +1,41 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import {
+  BrowserRouter as Router, Route, Routes,
+} from 'react-router-dom';
+
 import './App.css';
-import { Breadcrumb } from './components/atoms/Breadcrumb/Breadcrumb';
-import { HeaderContent } from './components/organisms/HeaderContent/HeaderContent';
 import { Home } from './components/templates/Home/Home';
-import { ItemDetail } from './components/templates/Results/ItemDetail/ItemDetail';
 import { Results } from './components/templates/Results/Results';
+import { Breadcrumb } from './components/atoms/Breadcrumb/Breadcrumb';
+import { ItemDetail } from './components/templates/Results/ItemDetail/ItemDetail';
+import { HeaderContent } from './components/organisms/HeaderContent/HeaderContent';
 
 function App() {
   return (
-    <div className="main-container">
-      <header>
-        <div>
-          <HeaderContent />
-        </div>
-      </header>
+    <Router>
+      <div className="main-container">
+        <header>
+          <div>
+            <HeaderContent />
+          </div>
+        </header>
 
-      <main>
-        <div>
-          <BrowserRouter>
+        <main>
+          <div>
             <Routes>
               <Route path="/" element={<> </>} />
-              <Route path="/*" element={<Breadcrumb />} />
+              <Route path="/items" element={<Breadcrumb />} />
+              <Route path="/items/:id" element={<Breadcrumb />} />
             </Routes>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/items" element={<Results />} />
               <Route path="/items/:id" element={<ItemDetail />} />
             </Routes>
-          </BrowserRouter>
-        </div>
-      </main>
-    </div>
+          </div>
+        </main>
+      </div>
+    </Router>
   );
 }
 

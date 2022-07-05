@@ -29,9 +29,14 @@ header {
   padding-bottom: 0.5rem;
 }
 
-.content-container {
+.results-container, .item-detail-container {
   background-color: white;
   width: 100%;
   min-height: 20rem;
   border-radius: 4px;
+}
+
+.item-detail-container {
+  box-sizing: border-box;
+  padding: 32px;
 }

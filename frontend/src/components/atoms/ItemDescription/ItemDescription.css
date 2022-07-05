@@ -9,6 +9,8 @@
 .price {
   font-size: 24px;
   min-width: max-content;
+  display: flex;
+  align-items: flex-start;
 }
 
 .price-and-benefics {
@@ -16,6 +18,29 @@
   align-items: center;
 }
 
+.price-and-benefics:hover {
+  cursor: pointer;
+}
+
 .line-after-descripcion {
   height: 32px;
+}
+
+.item-condition:first-letter {
+  text-transform: uppercase;
+}
+
+.text-item-descripcion {
+  font-size: 18px;
+}
+
+.text-item-descripcion:hover {
+  cursor: pointer;
+}
+
+.float-value-results {
+  display: none;
+  font-size: 12px;
+  margin-top: 0.1rem;
+  margin-left: 3px;
 }

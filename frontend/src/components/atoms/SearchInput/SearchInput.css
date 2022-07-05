@@ -16,14 +16,17 @@ input:focus-visible {
 }
 
 ::placeholder {
+  font-size: 18px;
   color: #999999;
   opacity: 1;
 }
 
 :-ms-input-placeholder {
+  font-size: 18px;
   color: #999999;
 }
 
 ::-ms-input-placeholder {
+  font-size: 18px;
   color: #999999;
 }

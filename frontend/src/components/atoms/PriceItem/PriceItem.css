@@ -6,7 +6,12 @@
   font-size: 46px;
 }
 
+.symbol-price {
+  margin-right: 0.5rem;
+}
+
 .float-value {
+  display: none;
   font-size: 22px;
   margin-top: 0.42rem;
 }

@@ -1,15 +1,19 @@
 import React from 'react';
 import './Breadcrumb.css';
+import { useSelector } from 'react-redux';
 
 export function Breadcrumb() {
+  const { categories } = useSelector((state: any) => state.items);
+
   return (
     <section>
       <ul className="breadcrumb">
-        <li><span>Electrónica, Audio y Video</span></li>
-        <li><span>iPod</span></li>
-        <li><span>Reproductores</span></li>
-        <li><span>iPod touch</span></li>
-        <li><b>32 GB</b></li>
+        {
+          categories && categories.map((category: any, i: number) => {
+            if (i !== categories.length - 1) return <li key={category}><span>{category}</span></li>;
+            return <li key={category}><b>{category}</b></li>;
+          })
+        }
       </ul>
     </section>
   );
