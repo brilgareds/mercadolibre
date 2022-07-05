@@ -6,8 +6,6 @@
     "backend"
   ],
   "scripts": {
-    "start": "npm run start:back && start:front",
-    "dev": "npm run start:front && npm run dev:back",
     "dev:back": "npm run dev --workspace=mercadolibre-backend",
     "start:back": "npm run start --workspace=mercadolibre-backend",
     "start:front": "npm run start --workspace=mercadolibre-frontend",
